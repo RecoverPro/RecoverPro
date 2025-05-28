@@ -3,130 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="RecoverPro - Deine Quelle für hochwertige Sport-, Fitness- und Outdoor-Produkte.">
   <title>RecoverPro - Sport, Fitness & Outdoor</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f9fa;
+      background: #f5f5f5;
       color: #222;
     }
     header {
       background: #0077cc;
       color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      padding: 2rem 1rem 1rem;
+      text-align: center;
+    }
+    header svg {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 0.5rem;
     }
     header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 1.8rem;
-      letter-spacing: 2px;
+      margin: 0.5rem 0 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 1rem;
+      font-size: 1rem;
+    }
+    nav {
+      background: #004f7a;
+      text-align: center;
+      padding: 0.8rem 1rem;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 1.5rem;
-      font-weight: 600;
+      margin: 0 1rem;
+      font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
+
     main {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #0077cc;
       text-align: center;
     }
-    main h2 {
-      font-size: 2rem;
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 2rem;
+    }
+
+    .product {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .product-detail {
+      display: none;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+
+    .product-detail img {
+      max-width: 100%;
+      border-radius: 10px;
       margin-bottom: 1rem;
-      color: #0077cc;
     }
-    main p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 2rem;
+
+    .btn {
+      background: #0077cc;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
     }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+
     footer {
       background: #222;
       color: #ccc;
-      padding: 1rem 2rem;
+      padding: 1.5rem 1rem;
       text-align: center;
+      margin-top: 4rem;
       font-size: 0.9rem;
     }
-    .btn-contact {
-      display: inline-block;
-      background: #0077cc;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background 0.3s ease;
-    }
-    .btn-contact:hover {
-      background: #005fa3;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>RecoverPro</h1>
-    <nav>
-      <a href="#produkte">Produkte</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </header>
-
-  <main>
-    <section id="produkte">
-      <h2>Sport, Fitness und Outdoor Produkte</h2>
-      <p>Entdecke unsere hochwertigen Produkte für deine Fitness, deinen Sport und Outdoor-Abenteuer. Qualität und Performance stehen bei RecoverPro an erster Stelle.</p>
-      <!-- Hier kannst du später Bilder oder dein Logo hinzufügen -->
-    </section>
-
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>Bei Fragen erreichst du uns unter:</p>
-      <a href="mailto:barany017@gmail.com" class="btn-contact">barany017@gmail.com</a>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 RecoverPro. Alle Rechte vorbehalten.
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RecoverPro</title>
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; color: #222; }
-    header { background-color: #0077cc; color: white; padding: 20px; text-align: center; }
-    header img { width: 120px; margin-bottom: 10px; }
-    h1 { margin: 0; }
-    h2 { color: #0077cc; }
-    nav { background: #004f7a; padding: 10px; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    .products, .product-detail { display: none; padding: 20px; max-width: 1000px; margin: auto; }
-    .product-list { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .product { background: white; padding: 15px; border-radius: 10px; width: 280px; cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    .product img { width: 100%; border-radius: 8px; }
-    .product-detail img { max-width: 100%; border-radius: 10px; }
-    footer { text-align: center; padding: 20px; background: #eee; margin-top: 40px; }
   </style>
 </head>
 <body>
 
 <header>
   <!-- SVG Logo -->
-  <svg width="100" height="100" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="blueGrad" x1="0" y1="0" x2="1" y2="1">
         <stop offset="0%" stop-color="#0077cc"/>
@@ -143,61 +145,100 @@
 
 <nav>
   <a href="#" onclick="showSection('products')">Produkte</a>
+  <a href="#kontakt">Kontakt</a>
 </nav>
 
-<section id="products" class="products">
-  <h2>Unsere Produkte</h2>
-  <div class="product-list">
-    <div class="product" onclick="showProductDetail()">
-      <img src="https://s.alicdn.com/@sc04/kf/H78c24b95d75e4f3681c12b6b130ef112d.jpg" alt="Massagepistole">
-      <h3>RecoverPro Magelux</h3>
-      <p>55€</p>
+<main>
+  <section id="products">
+    <h2>Unsere Produkte</h2>
+    <div class="product-list">
+      <div class="product" onclick="showProductDetail('magelux')">
+        <img src="https://s.alicdn.com/@sc04/kf/H78c24b95d75e4f3681c12b6b130ef112d.jpg" alt="Massagepistole">
+        <h3>RecoverPro Magelux</h3>
+        <p>55€</p>
+      </div>
+      <div class="product" onclick="showProductDetail('band')">
+        <img src="https://via.placeholder.com/280x180?text=Fitnessband+Set" alt="Fitnessband Set">
+        <h3>Fitnessband Set</h3>
+        <p>29€</p>
+      </div>
+      <div class="product" onclick="showProductDetail('bottle')">
+        <img src="https://via.placeholder.com/280x180?text=Outdoor+Trinkflasche" alt="Trinkflasche">
+        <h3>Outdoor Trinkflasche</h3>
+        <p>15€</p>
+      </div>
     </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/280x180?text=Produkt+2" alt="Produkt 2">
-      <h3>Fitnessband Set</h3>
-      <p>29€</p>
-    </div>
-    <div class="product">
-      <img src="https://via.placeholder.com/280x180?text=Produkt+3" alt="Produkt 3">
-      <h3>Outdoor Trinkflasche</h3>
-      <p>15€</p>
-    </div>
-  </div>
-</section>
 
-<section id="product-detail" class="product-detail">
-  <h2>RecoverPro Magelux</h2>
-  <img src="https://s.alicdn.com/@sc04/kf/H78c24b95d75e4f3681c12b6b130ef112d.jpg" alt="RecoverPro Magelux">
-  <p><strong>Preis:</strong> 55€</p>
-  <p><strong>Beschreibung:</strong> Die RecoverPro Magelux Massagepistole hilft dir, Muskelverspannungen effektiv zu lösen und die Regeneration zu fördern – perfekt für Sportler und Fitnessbegeisterte.</p>
-  <ul>
-    <li>16mm Amplitude für tiefe Muskelbehandlung</li>
-    <li>Starker Motor mit 6 Geschwindigkeitsstufen</li>
-    <li>Leiser Betrieb & ergonomisches Design</li>
-    <li>Lange Akkulaufzeit (bis zu 6 Stunden)</li>
-    <li>Mehrere Massageaufsätze inklusive</li>
-  </ul>
-  <button onclick="goBack()">Zurück zu den Produkten</button>
-</section>
+    <!-- Details Magelux -->
+    <div class="product-detail" id="detail-magelux">
+      <h2>RecoverPro Magelux</h2>
+      <img src="https://s.alicdn.com/@sc04/kf/H78c24b95d75e4f3681c12b6b130ef112d.jpg" alt="RecoverPro Magelux">
+      <p><strong>Preis:</strong> 55€</p>
+      <p>Die Massagepistole hilft dir, Muskelverspannungen effektiv zu lösen und die Regeneration zu fördern.</p>
+      <ul>
+        <li>16mm Amplitude</li>
+        <li>6 Geschwindigkeiten</li>
+        <li>Leiser Motor</li>
+        <li>Bis zu 6 Std. Akkulaufzeit</li>
+        <li>Inklusive Aufsätze</li>
+      </ul>
+      <button class="btn" onclick="goBack()">Zurück</button>
+    </div>
+
+    <!-- Details Band -->
+    <div class="product-detail" id="detail-band">
+      <h2>Fitnessband Set</h2>
+      <img src="https://via.placeholder.com/280x180?text=Fitnessband+Set" alt="Fitnessband Set">
+      <p><strong>Preis:</strong> 29€</p>
+      <p>Vielseitig einsetzbares Band-Set für Krafttraining, Reha und Mobilität.</p>
+      <ul>
+        <li>5 Widerstandsstufen</li>
+        <li>Latexfrei & langlebig</li>
+        <li>Ideal für Training zu Hause</li>
+      </ul>
+      <button class="btn" onclick="goBack()">Zurück</button>
+    </div>
+
+    <!-- Details Bottle -->
+    <div class="product-detail" id="detail-bottle">
+      <h2>Outdoor Trinkflasche</h2>
+      <img src="https://via.placeholder.com/280x180?text=Outdoor+Trinkflasche" alt="Outdoor Trinkflasche">
+      <p><strong>Preis:</strong> 15€</p>
+      <p>Robuste Edelstahlflasche für unterwegs, hält Getränke lange kalt oder heiß.</p>
+      <ul>
+        <li>600ml Fassungsvermögen</li>
+        <li>Doppelwandige Isolierung</li>
+        <li>Auslaufsicher & BPA-frei</li>
+      </ul>
+      <button class="btn" onclick="goBack()">Zurück</button>
+    </div>
+  </section>
+
+  <section id="kontakt" style="margin-top: 4rem; text-align: center;">
+    <h2>Kontakt</h2>
+    <p>Fragen? Schreib uns:</p>
+    <a href="mailto:barany017@gmail.com" class="btn">barany017@gmail.com</a>
+  </section>
+</main>
 
 <footer>
-  <p>Kontakt: barany017@gmail.com</p>
+  &copy; 2025 RecoverPro. Alle Rechte vorbehalten.
 </footer>
 
 <script>
   function showSection(id) {
-    document.querySelector('.products').style.display = 'none';
-    document.querySelector('.product-detail').style.display = 'none';
-    document.getElementById(id).style.display = 'block';
+    document.querySelectorAll('.product-detail').forEach(el => el.style.display = 'none');
+    document.getElementById('products').style.display = 'block';
   }
 
-  function showProductDetail() {
-    showSection('product-detail');
+  function showProductDetail(productId) {
+    document.getElementById('products').style.display = 'block';
+    document.querySelectorAll('.product-detail').forEach(el => el.style.display = 'none');
+    document.getElementById('detail-' + productId).style.display = 'block';
   }
 
   function goBack() {
-    showSection('products');
+    document.querySelectorAll('.product-detail').forEach(el => el.style.display = 'none');
   }
 </script>
 
